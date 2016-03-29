@@ -1,0 +1,56 @@
+$header-side-padding: 50px;
+$owl-height: 45px;
+
+#header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 35px 0 20px 0;
+  clear: both;
+  font-size: 22px;
+  background-color: white;
+
+  border-bottom: solid 1px #bdbdbd;
+
+  .side-item {
+    position: absolute;
+    height: $owl-height;
+    line-height: $owl-height;
+  }
+
+  .backLink {
+    color: black;
+  }
+
+  .back {
+    @extend .side-item;
+    left: 0;
+    margin-left: $header-side-padding;
+    cursor: pointer;
+  }
+
+  .action {
+    @extend .side-item;
+    right: 0;
+    margin-right: $header-side-padding;
+  }
+
+  .main {
+    .hero-owl {
+      height: $owl-height;
+
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+
+  .search {
+    margin-top: 20px;
+    width: 350px;
+  }
+
+  .home-link {
+    text-decoration: none;
+    color: black;
+  }
+}

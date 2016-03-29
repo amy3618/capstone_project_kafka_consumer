@@ -1,0 +1,145 @@
+//Trunk.js
+.trunk{
+  width: 100%;
+  top: 110px;
+  height: 90%;
+  position: absolute;
+  display: block;
+  
+}
+
+.trunk-svg{
+  height: 120%;
+  left: 450px;
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//LeftBranch.js
+.left-branch{
+  top: 0px;
+  left: 55px;
+  width: 450px;
+  height: 250px;
+  display: inline-block;
+  position: relative;
+}
+
+.left-branch-image{
+  width: 450px;
+  height: 190px;
+  position: absolute;
+  bottom: -40px;
+}
+
+.left-branch-topic1{
+  display: inline-block;
+  position: absolute;
+  left: 50px;
+}
+
+.left-branch-topic2{
+  display: inline-block;
+  position: absolute;
+  top:25px;
+  left: 175px;
+}
+
+.left-branch-topic3{
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  left: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+//RightBranch.js
+.right-branch{
+  top: 0px;
+  left: 475px;
+  width: 450px;
+  height: 250px;
+  display: block;
+  position: relative;
+}
+
+.right-branch-image{
+  width: 450px;
+  height: 190px;
+  position: absolute;
+  bottom: -40px;
+}
+
+.right-branch-topic1{
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  left: 60px;
+}
+
+.right-branch-topic2{
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  left: 200px;
+}
+
+.right-branch-topic3{
+  display: inline-block;
+  position: absolute;
+  left: 340px;
+}
+
+
+
+
+
+
+
+
+
+
+// Topic.js
+.topic {
+  width: 100px;
+  height: 150px;
+  display: inline-block;
+
+  span {
+    display: block;
+    text-align: center;
+  }
+}
+
+.owl {
+  width: 100px;
+  height: 110px;
+  
+  top: 40px;
+  position: absolute;
+}
+
+.topic-name {
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.75px;
+  font-weight: bold;
+}

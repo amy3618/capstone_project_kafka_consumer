@@ -1,0 +1,220 @@
+body {
+  overflow-x: hidden;
+}
+
+// MessageRow.js
+.messageRow {
+  position: relative;
+  height: 150px;
+  padding: 30px 0;
+  background-color: #faeaa6;
+}
+
+.keyword {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 30px;
+  max-width: 120px;
+  text-align: center;
+}
+
+.keyword a {
+  text-decoration: none;
+}
+
+.keyword-bubble {
+  font-size: 12px;
+  border-radius: 10px;
+  background-color: #6a9ab7;
+  padding: 5px 2px 5px 5px;
+  color: white;
+
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    color: white;
+  }
+
+  .keyword-name {
+    margin-right: 10px;
+    max-width: 100px;
+    overflow-y: hidden;
+  }
+
+  .keyword-cancel {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(white, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: rgba(white, 0.55);
+    }
+  }
+}
+
+.cheese {
+  text-align: center;
+  width: 35px;
+}
+
+// NewKeyword.js
+.newKeywordRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newKeywordRow form {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.new-keyword {
+  width: 200px;
+  background-color: #f2a222;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+}
+
+.new-keyword::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+.new-keyword:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: white;
+   opacity:  1;
+}
+.new-keyword::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: white;
+   opacity:  1;
+}
+.new-keyword:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+}
+.new-keyword:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color: white;
+}
+
+
+// ScrollingMessage.js
+.scrolling-message {
+  // Vertical center
+  position: absolute;
+  top: 50%;
+  right: -180px;
+  transform: translateY(-50%);
+
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.scrolling-message-bubble {
+  margin-bottom: 10px;
+}
+
+.scrolling-bubble {
+  display: inline-block;
+  min-width: 120px;
+  max-width: 120px;
+  min-height: 10px;
+  max-height: 60px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  border-radius: 10px;
+  background-color: #6a9ab7;
+  padding: 10px;
+  color: white;
+}
+
+.bubble-triangle-vertical {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent #6a9ab7;
+  margin: -25px 0 0 15px;
+}
+
+.mouse {
+  width: 100px;
+}
+
+// Message.js
+.static-mouse {
+  width: 100px;
+  display: inline-block;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.messages {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.message-bubble {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.bubble {
+  display: inline-block;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 50px;
+
+  overflow-y: hidden;
+
+  border-radius: 10px;
+  background-color: #6a9ab7;
+  padding: 10px;
+  color: white;
+}
+
+.bubble-triangle-left {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 20px 10px 0;
+  border-color: transparent #6a9ab7 transparent transparent;
+  margin: 0 0 -30px -20px;
+}
+
+.checkboxLabel {
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+.checkboxInput {
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
+}
